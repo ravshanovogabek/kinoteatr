@@ -1,0 +1,75 @@
+/* Styles for the card container */
+.cards {
+    display: inline-block; /* Aligns the card inline with other elements */
+    transition: transform .2s; /* Smooth scaling transition on hover */
+    position: relative; /* Enables positioning of child elements */
+    border-radius: 10px; /* Rounds the corners of the card */
+    overflow: hidden; /* Hides overflow content outside the card border */
+    margin: 0.19rem; /* Small margin around each card */
+    cursor: pointer; /* Changes cursor to a pointer to indicate clickability */
+    min-width: 200px; /* Sets a minimum width for the card */
+    height: 300px; /* Sets a fixed height for the card */
+    z-index: 0; /* Sets the stacking order */
+    border: 1px solid rgb(99, 99, 99); /* Adds a border with a gray color */
+}
+
+/* Styles for the card on hover BILINISHI*/
+.cards:hover { 
+    transform: scale(1.2); /* Scales the card up to 120% on hover */
+    z-index: 1000; /* Brings the card to the foreground on hover */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, /* Adds a large shadow around the card */
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Styles for the card image */
+.cards__img {
+    height: 300px; /* Sets the height of the card image */
+}
+
+/* Styles for the card overlay */
+.cards__overlay {
+    position: absolute; /* Positions the overlay absolutely within the card */
+    padding: 0 1rem 1rem 1rem; /* Adds padding inside the overlay */
+    bottom: 0px; /* Aligns the overlay to the bottom of the card */
+    height: 290px; /* Sets the height of the overlay */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Aligns child elements in a column */
+    width: 85%; /* Sets the width of the overlay */
+    justify-content: flex-end; /* Aligns child elements to the bottom */
+    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1)); /* Adds a gradient background from transparent to black */
+    opacity: 0; /* Hides the overlay initially */
+    transition: opacity .2s; /* Smooth opacity transition on hover */
+}
+
+/* Styles for the card overlay on hover */
+.cards__overlay:hover {
+    opacity: 1; /* Makes the overlay visible on hover */
+}
+
+/* Styles for the card title */
+.card__title {
+    font-weight: 900; /* Sets the font weight to bold */
+    font-size: 1rem; /* Sets the font size */
+    margin-bottom: 0.4rem; /* Adds space below the title */
+}
+
+/* Styles for the card runtime */
+.card__runtime {
+    font-size: .75rem; /* Sets the font size */
+    margin-bottom: 0.25rem; /* Adds space below the runtime */
+}
+
+/* Styles for the card rating */
+.card__rating {
+    float: right; /* Aligns the rating to the right */
+}
+
+/* Styles for the card description */
+.card__description {
+    font-style: italic; /* Italicizes the text */
+    font-size: .75rem; /* Sets the font size */
+    margin-bottom: 0.25rem; /* Adds space below the description */
+}

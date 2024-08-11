@@ -1,0 +1,61 @@
+/* Styles for the container of each movie poster image within the carousel */
+.posterImage {
+    height: 600px; /* Set the height of the poster container */
+}
+
+/* Styles for the image within the poster container */
+.posterImage > img {
+    margin: auto; /* Center the image horizontally */
+    display: block; /* Ensure the image is displayed as a block element */
+    width: 100%; /* Make the image fill the width of the container */
+}
+
+/* Styles for the overlay that appears on top of the poster image */
+.posterImage__overlay {
+    position: absolute; /* Position overlay absolutely within the poster container */
+    padding: 5rem; /* Add padding inside the overlay */
+    bottom: 0px; /* Position the overlay at the bottom of the container */
+    height: 70%; /* Set the height of the overlay to 70% of the poster container */
+    display: flex; /* Use flexbox layout for positioning child elements */
+    flex-direction: column; /* Arrange children in a vertical column */
+    width: 100%; /* Make the overlay fill the width of the container */
+    justify-content: flex-end; /* Align children to the bottom of the overlay */
+    align-items: flex-start; /* Align children to the start of the overlay horizontally */
+    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1)); /* Gradient from transparent to black for the overlay background */
+    opacity: 1; /* Ensure the overlay is fully opaque */
+    transition: opacity .3s; /* Smooth transition effect for opacity changes */
+}
+
+/* Hover effect for the overlay */
+.posterImage__overlay:hover {
+    opacity: 1; /* Maintain full opacity on hover */
+}
+
+/* Styles for the movie title within the overlay */
+.posterImage__title {
+    font-weight: 900; /* Use a very bold font weight for the title */
+    font-size: 4rem; /* Set a large font size for the title */
+    margin-bottom: 0.4rem; /* Add space below the title */
+    text-align: left; /* Align the title text to the left */
+}
+
+/* Styles for the runtime and release date within the overlay */
+.posterImage__runtime {
+    font-size: 2rem; /* Set a medium-large font size */
+    margin-bottom: 1rem; /* Add space below the runtime */
+}
+
+/* Styles for the rating section within the overlay */
+.posterImage__rating {
+    margin-left: 3rem; /* Add space to the left of the rating */
+}
+
+/* Styles for the movie description within the overlay */
+.posterImage__description {
+    font-style: italic; /* Display the description in italics */
+    font-size: 1rem; /* Set a smaller font size for the description */
+    margin-bottom: 0.25rem; /* Add space below the description */
+    display: flex; /* Use flexbox layout for the description */
+    text-align: left; /* Align text to the left */
+    width: 50%; /* Set the width of the description to 50% of the container */
+}

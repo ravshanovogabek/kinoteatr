@@ -1,0 +1,19 @@
+/* Styles for the container of the movie list */
+.movie__list {
+    padding: 0 3rem 3rem 3rem; /* Adds padding around the movie list container */
+    /* Padding order: top right bottom left */
+}
+
+/* Styles for the title of the movie list */
+.list__title {
+    font-size: 1.80rem; /* Sets the font size of the title */
+    margin: 2rem; /* Adds margin around the title to create space */
+    /* Margin order: top right bottom left (default value applies to all sides) */
+}
+
+/* Styles for the container that holds movie cards */
+.list__cards {
+    display: flex; /* Uses flexbox layout for child elements */
+    flex-wrap: wrap; /* Allows child elements to wrap to the next line if necessary */
+    justify-content: center; /* Centers the movie cards horizontally within the container */
+}

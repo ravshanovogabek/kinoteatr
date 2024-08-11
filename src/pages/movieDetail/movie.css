@@ -1,0 +1,165 @@
+/* Main container for the Movie component */
+.movie {
+    width: 100%; /* Full width of the container */
+    position: relative; /* Relative positioning for positioning child elements */
+    display: flex; /* Flexbox layout for child elements */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center children horizontally */
+}
+
+/* Container for the movie backdrop image */
+.movie__intro {
+    width: 80%; /* 80% of the parent width */
+}
+
+/* Style for the backdrop image */
+.movie__backdrop {
+    width: 100%; /* Full width of the container */
+    height: 500px; /* Fixed height for the backdrop image */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    object-position: 0 35%; /* Position the image (35% from the top) */
+}
+
+/* Container for movie details section */
+.movie__detail {
+    align-items: center; /* Center child elements horizontally */
+    width: 75%; /* 75% of the parent width */
+    display: flex; /* Flexbox layout for child elements */
+    position: relative; /* Relative positioning for positioning child elements */
+    bottom: 225px; /* Move the container up by 225px */
+}
+
+/* Style for the left side of movie details */
+.movie__detailLeft {
+    margin-right: 30px; /* Add space to the right */
+}
+
+/* Style for the movie poster image */
+.movie__poster {
+    width: 300px; /* Fixed width for the poster */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px; /* Shadow effect */
+}
+
+/* Style for the right side of movie details */
+.movie__detailRight {
+    color: white; /* White text color */
+    display: flex; /* Flexbox layout for child elements */
+    flex-direction: column; /* Arrange children in a column */
+    height: 450px; /* Fixed height */
+    justify-content: space-between; /* Distribute space between children */
+}
+
+/* Style for elements within the top section of movie details */
+.movie__detailRightTop > div {
+    text-shadow: 0px 0px 5px #000000; /* Shadow effect for text */
+    margin-bottom: .5rem; /* Space below each element */
+}
+
+/* Style for the movie title */
+.movie__name {
+    font-weight: 600; /* Semi-bold font weight */
+    font-size: 3rem; /* Large font size */
+}
+
+/* Style for the vote count section */
+.movie__voteCount {
+    margin-left: 1rem; /* Space to the left of the vote count */
+}
+
+/* Style for the genres section */
+.movie__genres {
+    margin: 1.25rem 0; /* Space above and below the genres section */
+}
+
+/* Style for each genre item */
+.movie__genre {
+    padding: .5rem; /* Space inside the genre item */
+    border: 2px solid white; /* White border */
+    border-radius: 20px; /* Rounded corners */
+    margin-right: 1rem; /* Space to the right of each genre item */
+}
+
+/* Style for the bottom part of movie details */
+.movie__detailRightBottom {
+    margin: 2rem 0; /* Space above and below the bottom section */
+    flex: 0.8; /* Flex-grow factor */
+}
+
+/* Style for the synopsis text */
+.synopsisText {
+    font-size: 1.5rem; /* Medium font size */
+    margin-bottom: 1.25rem; /* Space below the synopsis text */
+    font-weight: 600; /* Semi-bold font weight */
+    display: flex; /* Flexbox layout for child elements */
+    position: relative; /* Relative positioning for positioning child elements */
+    align-items: center; /* Center children vertically */
+}
+.synopsisText > div:last-of-type {
+    margin-left: auto; /* Push the last child to the far right */
+}
+
+/* Style for the links section */
+.movie__links {
+    position: relative; /* Relative positioning for positioning child elements */
+    bottom: 120px; /* Move the container up by 120px */
+    display: flex; /* Flexbox layout for child elements */
+    justify-content: space-between; /* Distribute space between child elements */
+    width: 75%; /* 75% of the parent width */
+}
+
+/* Style for headings in various sections */
+.movie__heading {
+    font-size: 2.2rem; /* Medium-large font size */
+}
+
+/* Base style for buttons in the movie links section */
+.movie__Button {
+    display: flex; /* Flexbox layout for child elements */
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    padding: 0.8rem 2rem; /* Padding inside the button */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 150px; /* Fixed width for buttons */
+    color: black; /* Black text color */
+    font-weight: bold; /* Bold font weight */
+}
+
+/* Style for the homepage button */
+.movie__homeButton {
+    background-color: rgb(255, 0, 0); /* Red background */
+}
+
+/* Style for the IMDb button */
+.movie__imdbButton {
+    background-color: #f3ce13; /* Yellow background */
+}
+
+/* Style for icons indicating external links */
+.newTab {
+    margin-left: 1.4rem; /* Space to the left of the icon */
+}
+
+/* Style for the production companies section */
+.movie__production {
+    width: 85%; /* 85% of the parent width */
+    display: flex; /* Flexbox layout for child elements */
+    justify-content: center; /* Center children horizontally */
+    align-items: flex-end; /* Align children to the bottom */
+    margin-bottom: 4rem; /* Space below the section */
+}
+
+/* Style for production company images */
+.movie__productionCompany {
+    width: 200px; /* Fixed width for each company image */
+    margin: 2rem; /* Space around each company image */
+}
+
+/* Style for the container holding each production company image and name */
+.productionCompanyImage {
+    display: flex; /* Flexbox layout for child elements */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+}

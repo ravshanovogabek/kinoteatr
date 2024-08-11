@@ -1,0 +1,38 @@
+/* Styles for the header container */
+.header {
+    margin: 0 2.5rem; /* Adds horizontal margin to the header */
+    padding: .5rem 0; /* Adds vertical padding to the header */
+    align-items: center; /* Aligns child elements vertically in the center */
+    display: flex; /* Uses flexbox layout */
+    justify-content: space-between; /* Distributes space between child elements, aligning them to the edges */
+}
+
+/* Styles for left and right sections of the header */
+.headerLeft, .headerRight {
+    display: flex; /* Uses flexbox layout for alignment */
+    align-items: center; /* Aligns child elements vertically in the center */
+}
+
+/* Styles for span elements inside anchor tags */
+a > span {
+    margin: 0 30px; /* Adds horizontal margin around the span elements */
+    font-size: 1.3rem; /* Sets the font size of the span elements */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    color: orange; /* Sets the text color to white */
+}
+
+/* Styles for span elements inside anchor tags on hover */
+a > span:hover {
+    color: red; /* Changes the text color to red when hovered */
+}
+
+/* Styles for the header logo icon */
+.header__icon {
+    width: 80px; /* Sets the width of the logo */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+/* Styles for user avatar (not used in the provided Header component) */
+.user__avatar {
+    font-size: 2rem; /* Sets the font size of the user avatar */
+}
